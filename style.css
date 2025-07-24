@@ -51,7 +51,7 @@ body {
 
 header {
   background-color: #111;
-  height: 50px;
+  height: 100px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -64,7 +64,7 @@ header {
 
 .yellow-bar {
   background-color: #fcd100;
-  padding: 10px 20px;
+  padding: 20px 20px;
   font-family: Arial, sans-serif;
   font-size: 16px;
   font-weight: bold;
