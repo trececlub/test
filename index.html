@@ -95,12 +95,31 @@
   </footer>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document.getElementById("dropdownToggle").addEventListener("click", function () {
-        const dropdown = document.getElementById("dropdownContent");
-        dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
-      });
+document.addEventListener("DOMContentLoaded", function () {
+  const inputs = document.querySelectorAll('.code-inputs input');
+  const button = document.getElementById('submitBtn');
+
+  function checkInputs() {
+    const allFilled = Array.from(inputs).every(input => input.value.trim() !== "");
+    button.disabled = !allFilled;
+  }
+
+  inputs.forEach((input, index) => {
+    input.addEventListener('input', () => {
+      if (input.value.length === 1 && index < inputs.length - 1) {
+        inputs[index + 1].focus();
+      }
+      checkInputs();
     });
-  </script>
+  });
+
+  button.addEventListener('click', () => {
+    const code = Array.from(inputs).map(i => i.value).join('');
+    alert("Código ingresado: " + code); // Aquí puedes reemplazar por redirección o validación
+  });
+
+  checkInputs();
+});
+</script>
 </body>
 </html>
