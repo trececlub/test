@@ -24,3 +24,8 @@ inputs.forEach(input => {
 });
 
 checkInputs(); // Verifica al cargar la página
+
+document.getElementById("dropdownToggle").addEventListener("click", function () {
+  const dropdown = document.getElementById("dropdownContent");
+  dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+});
