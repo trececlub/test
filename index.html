@@ -10,16 +10,16 @@
 <body>
 
   <!-- Barra negra superior -->
-  <div class="top-info-bar">
-    <span>Información importante para los visitantes</span>
-    <button id="dropdownToggle">Revisa aquí ▼</button>
-    <div id="dropdownContent">
-      <p>
-        Este sistema te permite consultar el estado de tu caso ante el tribunal de inmigración.
-        Ten en cuenta que esta información es referencial. Para asuntos oficiales, comunícate directamente con tu tribunal asignado.
-      </p>
-    </div>
-  </div>
+ <div class="top-info-bar">
+  <p style="margin: 0;">
+    Escanea la tarjeta o haz clic para continuar
+    <button id="dropdownToggle" style="margin-left: 8px;">Revisa aquí</button>
+  </p>
+</div>
+
+<div id="dropdownContent" style="display: none; background: #fff8d1; padding: 15px; border: 1px solid #ddd; margin-top: 10px;">
+  Este es un mensaje informativo que puedes personalizar. Aquí irá la información adicional que aparece al hacer clic.
+</div>
 
   <!-- Resto de tu página actual sigue aquí -->
 
