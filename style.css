@@ -238,4 +238,41 @@ footer img {
   button {
     width: 100%;
   }
+}.top-info-bar {
+  background-color: black;
+  color: white;
+  padding: 6px 16px;
+  font-family: sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
 }
+
+.top-info-bar button {
+  background: none;
+  border: none;
+  color: #ffd700;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0;
+  font-size: 14px;
+}
+
+#dropdownContent {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 16px;
+  background-color: #222;
+  color: white;
+  padding: 10px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 10;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
