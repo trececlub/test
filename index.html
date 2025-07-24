@@ -90,6 +90,13 @@
     <p>&copy; 2025 Club Trece. Todos los derechos reservados.</p>
   </footer>
 
-  <script src="script/main.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("dropdownToggle").addEventListener("click", function () {
+        const dropdown = document.getElementById("dropdownContent");
+        dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
 </body>
 </html>
