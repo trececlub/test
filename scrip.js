@@ -26,7 +26,13 @@ inputs.forEach(input => {
 checkInputs(); // Verifica al cargar la página
     
 }
-document.getElementById("dropdownToggle").addEventListener("click", function () {
-  const dropdown = document.getElementById("dropdownContent");
-  dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.getElementById("dropdownToggle");
+  const content = document.getElementById("dropdownContent");
+
+  if (toggle && content) {
+    toggle.addEventListener("click", function () {
+      content.style.display = content.style.display === "block" ? "none" : "block";
+    });
+  }
 });
