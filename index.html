@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de Información</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Barra negra superior -->
+  <div class="top-info-bar">
+    <span>Información importante para los visitantes</span>
+    <div class="dropdown-wrapper">
+      <button onclick="toggleDropdown()">Revisa aquí ▼</button>
+      <div id="dropdownContent">
+        Aquí puedes encontrar información relevante sobre cómo funciona el sistema de infracciones y cómo consultar tu estado actual.
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <img src="logo.png" alt="Logo" class="logo-img" />
+  </header>
+
+  <!-- Barra amarilla -->
+  <section class="yellow-bar">
+    <div>
+      Texto de la barra amarilla | revisa el link:
+      <a href="https://tupagina.com/enlace" target="_blank">este es el link</a>
+    </div>
+  </section>
+
+  <!-- Sección principal 50/50 -->
+  <section class="main-section">
+    <div class="left">
+      <div>
+        <img src="https://img.icons8.com/ios-filled/100/000000/courthouse.png" alt="Icono tribunal" />
+        <h1>Información automatizada<br>de casos</h1>
+        <p>
+          Bienvenido al sistema de información automatizada del Tribunal de Inmigración.
+          La siguiente información está relacionada exclusivamente con el caso principal.
+          Por favor comuníquese con su tribunal asignado si necesita información sobre una audiencia de fianza.
+        </p>
+      </div>
+    </div>
+
+    <div class="right-side">
+      <div class="white-box">
+        <h2>Ingrese su número de registro de Extranjero</h2>
+        <p>
+          <strong>Número de registro de extranjero</strong>
+          <span class="required">*Obligatorio</span>
+          <a href="#" class="help">¿Qué es un número de inmigrante extranjero?</a>
+        </p>
+
+        <div class="code-inputs">
+          <input type="text" maxlength="1" inputmode="numeric">
+          <input type="text" maxlength="1" inputmode="numeric">
+          <input type="text" maxlength="1" inputmode="numeric">
+          <div class="spacer"></div>
+          <input type="text" maxlength="1" inputmode="numeric">
+          <input type="text" maxlength="1" inputmode="numeric">
+          <input type="text" maxlength="1" inputmode="numeric">
+          <div class="spacer"></div>
+          <input type="text" maxlength="1" inputmode="numeric">
+          <input type="text" maxlength="1" inputmode="numeric">
+          <input type="text" maxlength="1" inputmode="numeric">
+        </div>
+
+        <button disabled>ENVIAR</button>
+
+        <p class="info">
+          <span class="icon">ℹ️</span>
+          La información sobre el caso que aparece en este sistema automatizado, se provee apenas para su conveniencia. Los documentos que se le emitan a usted o a su representante por el tribunal de inmigración o el tribunal de apelaciones, son los únicos de carácter oficial relacionado a su caso.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <img src="logo.png" alt="Club Trece Logo" />
+    <p>&copy; 2025 Club Trece. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
